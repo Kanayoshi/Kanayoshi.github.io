@@ -1,10 +1,33 @@
+<!-- 文書型宣言。文書が正しく動作するために必要 -->
 <!DOCTYPE html>
+<!-- このページの全てのコンテンツを囲むルート要素。文書の主要な言語を設定するlang属性も指定できるらしい？ -->
 <html>
+<!-- 
+  ページの閲覧者に向けて表示するためのコンテンツではない、HTMLページに含めたいものをすべて収めるための入れ物。
+  検索エンジン向けのキーワードやページの説明書き、CSS、文字コードの宣言などを含む 
+-->
 <head>
+  <!-- UTF-8を文書で使用するように設定する -->
   <meta charset="utf-8">
+  <!-- 
+    パージョン8.0以降のInternet Explorerで使える互換モード。
+    IEは各バージョンごとにレイアウトの癖やJavaScriptの挙動が異なるため、古いバージョンで想定通り表示できたウェブページが新しいバージョンでは想定通りの表示にならないことがある。
+    この問題を解決するためにこの機能が役立つ。
+    後半はIEなら最新環境で表示してねという意味の記載。 
+  -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- ページのタイトルを指定。ブックマークやお気に入りに登録したときの説明にも用いられる -->
   <title>Yoshinori Kanmaura's Homepage</title>
+  <!-- 
+    現在の文書と外部のリソースとの関係を指定する。
+    rel属性の値はこれを含んでいる文書にどのように関係するかを示す。
+  -->
   <link rel="stylesheet" href="">
+  <!-- 
+    JavaScriptやVBScriptなどのスクリプトを文書内に埋め込んだり外部スクリプトを読み込んだりするために使用する。
+    type属性にJavaScriptなどスクリプト言語を指定する（これは必須）。
+    src属性で外部スクリプトのURLを指定する。 
+  -->
   <script type="text/javascript" src=""></script>
 </head>
 <body>
@@ -12,6 +35,9 @@
     <!-- ヘッダーはここに記述 -->
   </header>
   <h1>Yoshinori Kanamura's Homepage</h1>
+  <p>
+    Japanese page is <a href="hapanese.html">here</a>.
+  </p>
   <div id="wrapper">
     <section>
       <h2>About me</h2>
