@@ -9,6 +9,7 @@
 <head>
   <!-- UTF-8を文書で使用するように設定する -->
   <meta charset="utf-8">
+
   <!-- 
     パージョン8.0以降のInternet Explorerで使える互換モード。
     IEは各バージョンごとにレイアウトの癖やJavaScriptの挙動が異なるため、古いバージョンで想定通り表示できたウェブページが新しいバージョンでは想定通りの表示にならないことがある。
@@ -16,19 +17,40 @@
     後半はIEなら最新環境で表示してねという意味の記載。 
   -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <!-- ページのタイトルを指定。ブックマークやお気に入りに登録したときの説明にも用いられる -->
   <title>Yoshinori Kanmaura's Homepage</title>
+
   <!-- 
     現在の文書と外部のリソースとの関係を指定する。
     rel属性の値はこれを含んでいる文書にどのように関係するかを示す。
   -->
   <link rel="stylesheet" href="">
+
   <!-- 
     JavaScriptやVBScriptなどのスクリプトを文書内に埋め込んだり外部スクリプトを読み込んだりするために使用する。
     type属性にJavaScriptなどスクリプト言語を指定する（これは必須）。
     src属性で外部スクリプトのURLを指定する。 
   -->
   <script type="text/javascript" src=""></script>
+
+  <!-- MathJaxを用いてWebページ上にLaTeX表式を使って数式表現を行うための設定 -->
+  <script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+  </script>
+
 </head>
 <!-- テキスト、画像、ビデオ、ゲーム、再生可能な音声トラックなど、ページを訪れた利用者に表示したい全てのコンテンツを含む。-->
 <body>
@@ -68,11 +90,12 @@
       <h2>Education</h2>
       <ul>
         <li>
-          <strong>Ph.D (Science)</strong> in Keio University
+          <strong>Ph.D (Science)</strong> in Keio University.
           Thesis title: "Existence of Rational Points and Integer Points on Certain Algebraic Varieties"
         </li>
         <li>
-          March 2020: <strong>M.S.</strong> in Keio University
+          March 2020: <strong>M.S.</strong> in Keio University.
+          Thesis title: "The Proportion of Diagonal Cubic Curves over $\mathbb{Q}$ that Everywhere Locally Have a Point"
         </li>
         <li>
           March 2018: <strong>B.S.</strong> in Keio University
@@ -113,7 +136,7 @@
           <li>
             <strong>Some periodic integer continued fraction expansions of √m and application to the Pell equations</strong>,
             joint work with Hyuga Yoshizaki,
-            preprint(<a href="https://doi.org/10.48550/arXiv.2208.08347">arXiv:2208.08347</a>).
+            preprint (<a href="https://doi.org/10.48550/arXiv.2208.08347">arXiv:2208.08347</a>).
           </li>
           <li>
             <strong>On the proportions of soluble forms in some families of locally soluble binary quartic forms</strong>,
@@ -141,67 +164,67 @@
       <h2>Talks</h2>
       <ul>
         <li>
-          Fisher-Ho-Park予想について, Project workshop(プロジェクト研究集会2023), Heartpia Atami, March 11, 2024(Poster, Japanese) 
+          Fisher-Ho-Park予想について, Project workshop(プロジェクト研究集会2023), Heartpia Atami, March 11, 2024 (Poster, Japanese) 
         </li>
         <li>
-          Integer points on periodic continued fraction varieties, The 5th RIKEN AIP Mathematics Joint Seminar, Miura Mahoroba Minds, February 19, 2023(Poster, English)
+          Integer points on periodic continued fraction varieties, The 5th RIKEN AIP Mathematics Joint Seminar, Miura Mahoroba Minds, February 19, 2023 (Poster, English)
         </li>
         <li>
-          方程式の有理数解を局所大域原理から捉える, NTT KIso Sugaku seminar, NTT Musashino R&D Center, December 22, 2023(Japanese)
+          方程式の有理数解を局所大域原理から捉える, NTT KIso Sugaku seminar, NTT Musashino R&D Center, December 22, 2023 (Japanese)
         </li>
         <li>
-          ある種数1の曲線族における有理点を持つものの割合について, Sugimoto algebra seminar, Osaka Metropolitan University, Decenber 8, 2023(Japanese)
+          ある種数1の曲線族における有理点を持つものの割合について, Sugimoto algebra seminar, Osaka Metropolitan University, Decenber 8, 2023 (Japanese)
         </li>
         <li>
-          ある種数1の曲線族における有理点を持つものの割合について, Tsuda number theory workshop 2023, Tsuda University, November 18, 2023(Japanese)
+          ある種数1の曲線族における有理点を持つものの割合について, Tsuda number theory workshop 2023, Tsuda University, November 18, 2023 (Japanese)
         </li>
         <li>
-          The proportions of certain families of genus one curves that have rational points, AIP Math seminar, Keio University, June 28, 2023(English)
+          The proportions of certain families of genus one curves that have rational points, AIP Math seminar, Keio University, June 28, 2023 (English)
         </li>
         <li>
-          ある種数 1 の曲線族における有理点を持つものの割合について, Kyusyu Algebraic Number Theory 2023, Kyushu University, March 2, 2023(Japanese)
+          ある種数 1 の曲線族における有理点を持つものの割合について, Kyusyu Algebraic Number Theory 2023, Kyushu University, March 2, 2023 (Japanese)
         </li>
         <li>
-          Some periodic integer continued fraction expansions of √m and application to the Pell equation, Algebraic Number Theory and Related Topics 2022, Kyoto Univ.(RIMS), December 14, 2022(Japanese)
+          Some periodic integer continued fraction expansions of √m and application to the Pell equation, Algebraic Number Theory and Related Topics 2022, Kyoto Univ.(RIMS), December 14, 2022 (Japanese)
         </li>
         <li>
-          Some periodic integer continued fraction expansions of √m and application to the Pell equation, AIP Math seminar, Keio University, October 12, 2022(English)
+          Some periodic integer continued fraction expansions of √m and application to the Pell equation, AIP Math seminar, Keio University, October 12, 2022 (English)
         </li>
         <li>
-          あるPCF曲面の整数点について, Project workshop 2021(プロジェクト研究集会 2021), zoom, March 16, 2022(Poster, Japanese) 
+          あるPCF曲面の整数点について, Project workshop 2021(プロジェクト研究集会 2021), zoom, March 16, 2022 (Poster, Japanese) 
         </li>
         <li>
-          局所点を持つ対角的超曲面族の割合の計算法について, SESSION ``Young Mathematicians' Challenge'' 2022, Virbela, March 8, 2022(Poster, Japanese)
+          局所点を持つ対角的超曲面族の割合の計算法について, SESSION ``Young Mathematicians' Challenge'' 2022, Virbela, March 8, 2022 (Poster, Japanese)
         </li>
         <li>
-          局所点を持つ対角的超曲面族の割合の計算法について, Keio Univ. algebraic seminar, zoom, February 28, 2022(Japanese)
+          局所点を持つ対角的超曲面族の割合の計算法について, Keio Univ. algebraic seminar, zoom, February 28, 2022 (Japanese)
         </li>
         <li>
-          Studying class numbers by using machine learning, AIP Math Seminar, zoom, December 22, 2021(English)
+          Studying class numbers by using machine learning, AIP Math Seminar, zoom, December 22, 2021 (English)
         </li>
         <li>
-          Rational points on diagonal hypersurfaces, AIP Math Seminar, zoom, May 10, 2021(English)
+          Rational points on diagonal hypersurfaces, AIP Math Seminar, zoom, May 10, 2021 (English)
         </li>
         <li>
-          How to calculate the proportion of everywhere locally soluble diagonal hypersurfaces, Project workshop 2020(プロジェクト研究集会 2020), zoom, March 12, 2021(Poster, Japanese)
+          How to calculate the proportion of everywhere locally soluble diagonal hypersurfaces, Project workshop 2020(プロジェクト研究集会 2020), zoom, March 12, 2021 (Poster, Japanese)
         </li>
         <li>
-          How to calculate the proportion of everywhere locally soluble diagonal hypersurfaces, Problems and Prospects in Analytic Number Theory, zoom, November 27, 2020(Japanese)
+          How to calculate the proportion of everywhere locally soluble diagonal hypersurfaces, Problems and Prospects in Analytic Number Theory, zoom, November 27, 2020 (Japanese)
         </li>
         <li>
-          局所点を持つ対角的超曲面の族の密度の計算法について, Friday Tea Time Zoom Seminar, zoom, October 2, 2020(Japanese)
+          局所点を持つ対角的超曲面の族の密度の計算法について, Friday Tea Time Zoom Seminar, zoom, October 2, 2020 (Japanese)
         </li>
         <li>
-          How to calculate the proportion of everywhere locally soluble diagonal hypersurfaces, Sendai-Hiroshima Workshop on Number Theory, zoom, September 10, 2020(Japanese)
+          How to calculate the proportion of everywhere locally soluble diagonal hypersurfaces, Sendai-Hiroshima Workshop on Number Theory, zoom, September 10, 2020 (Japanese)
         </li>
         <li>
-          A certain counterexample for local-global principle, BOSTON UNIVERSITY/KEIO UNIVERSITY WORKSHOP 2019, Boston University, June 24, 2019(Poster, English)
+          A certain counterexample for local-global principle, BOSTON UNIVERSITY/KEIO UNIVERSITY WORKSHOP 2019, Boston University, June 24, 2019 (Poster, English)
         </li>
         <li>
-          degree 4のdel Pezzo曲面における局所大域原理の反例族の構成, Mejiro Spring Seminar on Math 2019, Japan Women's University, March 27, 2019(Japanese)
+          degree 4のdel Pezzo曲面における局所大域原理の反例族の構成, Mejiro Spring Seminar on Math 2019, Japan Women's University, March 27, 2019 (Japanese)
         </li>
         <li>
-          Brauer-Manin障害を用いたHasse原理の反例族の構成, Project workshop 2018(プロジェクト研究集会 2018), Heartpia Atami, March 6, 2019(Japanese)
+          Brauer-Manin障害を用いたHasse原理の反例族の構成, Project workshop 2018(プロジェクト研究集会 2018), Heartpia Atami, March 6, 2019 (Japanese)
         </li>
       </ul>
     </section>
@@ -226,7 +249,7 @@
           Grant-in-Aid for JSPS Fellows(DC2), April 2022-March 2024
         </li>
         <li>
-          JST Support for Pioneering Research Initiated by the Next Generation(Keio University), October 2021-March 2022
+          JST Support for Pioneering Research Initiated by the Next Generation (Keio University), October 2021-March 2022
         </li>
         <li>
           KLL 2021 Ph.D. Program Research Grant, April 2021-March 2022
@@ -247,19 +270,19 @@
           TAMURA scholarship April 2023-March 2024
         </li>
         <li>
-          Research Encouragement Scholarship for Graduate Students(Keio Univ.), April 2022-March 2023
+          Research Encouragement Scholarship for Graduate Students (Keio Univ.), April 2022-March 2023
         </li>
         <li>
-          JST Research Encouragement Scholarship for Graduate Students(Keio Univ.) April 2021-March 2022
+          JST Research Encouragement Scholarship for Graduate Students (Keio Univ.) April 2021-March 2022
         </li>
         <li>
-          Research Encouragement Scholarship for Graduate Students(Keio Univ.), April 2021-March 2022
+          Research Encouragement Scholarship for Graduate Students (Keio Univ.), April 2021-March 2022
         </li>
         <li>
-          Keio University Study Support Scholarship 2020(Spring)
+          Keio University Study Support Scholarship 2020 (Spring)
         </li>
         <li>
-          Research Encouragement Scholarship for Graduate Students(Keio Univ.), April 2020-March 2021
+          Research Encouragement Scholarship for Graduate Students (Keio Univ.), April 2020-March 2021
         </li>
       </ul>
     </section>
@@ -268,25 +291,25 @@
       <h2>TA</h2>
       <ul>
         <li>
-          Mathematics 1A(Spring, 2020 and 2021)
+          Mathematics 1A (Spring, 2020 and 2021)
         </li>
         <li>
-          Mathematics 2B(Autumn, 2020)
+          Mathematics 2B (Autumn, 2020)
         </li>
         <li>
-          First Semester Tutorial Hours(mathematics), Ph.D student tutor(2020 and 2021)
+          First Semester Tutorial Hours (mathematics), Ph.D student tutor (2020 and 2021)
         </li>
         <li>
-          OLIS in life insurance mathematics(Spring, 2021. Intensive Course)
+          OLIS in life insurance mathematics (Spring, 2021. Intensive Course)
         </li>
         <li>
-          Introduction to life insurance(Autumn, 2021)
+          Introduction to life insurance (Autumn, 2021)
         </li>
         <li>
-          OLIS in life insurance mathematics(Spring, 2022. Intensive Course)
+          OLIS in life insurance mathematics (Spring, 2022. Intensive Course)
         </li>
         <li>
-          Introduction to life insurance(Autumn, 2022)
+          Introduction to life insurance (Autumn, 2022)
         </li>
       </ul>
     </section>
