@@ -45,14 +45,15 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
 </div></details>
 
 - 数式について
-  - GitHub Pagesでmarkdownファイルを静的なwebページとして公開する際、markdownファイル内に以下を記述する
+  - GitHub Pagesでmarkdownファイルを静的なwebページとして公開する際、markdownファイル内に以下を記述する。これでMathJaxを入れているっぽい
   
   ```
     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   ```
 
-  - 数式はコードブロックの言語指定をmathにすると表示される。
+  - ~~数式はコードブロックの言語指定をmathにすると表示される。~~
+  どうもGitHub Pagesを介してサイトに表示させる場合にはうまく使えなさそう。別行立ての数式として利用するしかないかも
     
     ````
     ```math
@@ -69,9 +70,9 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
     ```
     ````
 
-    出力結果は以下の通り
+    出力結果は以下の通り（`$$`で囲って出力させている）
 
-    ```math
+    $$
     \begin{equation}
     sushi=
     \begin{pmatrix}
@@ -82,7 +83,7 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
     ** & \cdots & \cdots & \cdots & \cdots & ** \\
     \end{pmatrix}
     \end{equation}
-    ```
+    $$
 
   - `$`で囲むと数式をインライン表示できる
   - `$$`で囲むと別行立ての数式表示ができる
@@ -163,7 +164,7 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
 - [Markdownの書き方](https://help.docbase.io/posts/13697)：2024年6月9日閲覧
 - [Markdown An option to highlight a Note and Warning using blockquote (Beta) #16925](https://github.com/orgs/community/discussions/16925)：2024年6月9日閲覧
 - [Markdown記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)：2024年6月9日閲覧
-- [GitHub Pagesで数式を書く方法と主なトラブルについて](https://qiita.com/BurnEtz/items/e79999264125eb128ae7)
+- [GitHub Pagesで数式を書く方法と主なトラブルについて](https://qiita.com/BurnEtz/items/e79999264125eb128ae7)：2024年6月9日閲覧
 
 #### 脚注
 [^1]: 酢飯の上になんか色々乗せた食べ物
