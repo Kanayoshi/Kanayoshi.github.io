@@ -87,7 +87,7 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
 
   - `$`で囲むと数式をインライン表示できる
   - `$$`で囲むと別行立ての数式表示ができる
-  - 他の方法もあるっぽい（cf. https://tex2e.github.io/blog/latex/mathjax-to-katex）
+  - 他の方法もあるっぽい（cf. [このサイト](https://tex2e.github.io/blog/latex/mathjax-to-katex)）
 
 - テーブル：以下のように書ける。
 
@@ -167,6 +167,7 @@ GitHubにてpreviewの際にはきちんと出力されるが、GitHub Pagesに�
 - [Markdown An option to highlight a Note and Warning using blockquote (Beta) #16925](https://github.com/orgs/community/discussions/16925)：2024年6月9日閲覧
 - [Markdown記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)：2024年6月9日閲覧
 - [GitHub Pagesで数式を書く方法と主なトラブルについて](https://qiita.com/BurnEtz/items/e79999264125eb128ae7)：2024年6月9日閲覧
+- [JekyllでMathJaxからKaTeXに移行した](https://tex2e.github.io/blog/latex/mathjax-to-katex)：2024年6月9日閲覧
 
 #### 脚注
 [^1]: 酢飯の上になんか色々乗せた食べ物
