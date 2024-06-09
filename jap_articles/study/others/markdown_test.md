@@ -2,11 +2,11 @@
 
 Markdown記法のメモ（自分用なのでまとまりがないです。使い方として誤っているものがあれば教えて下さい）
 
-- インラインコードを記述する際はバッククオートで囲む。コードブロックはバッククオート３つで囲む。
+- インラインコードを記述する際はバッククオートで囲む。コードブロックはバッククオート３つで囲む
 - 強調：アスタリスク２つ`**` またはアンダースコア２つ`__`で囲む
 - 斜体：アスタリスク１つ`*` またはアンダースコア１つ`_`で囲む
 - 打消し線：チルダ２つ`~~`で囲む
-- 画像の挿入：以下の記法で表すことができる。
+- 画像の挿入：以下の記法で表すことができる
 ```Markdown
 ![ロゴ](https://docbase.io/logo.png)
 ```
@@ -139,6 +139,7 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
 - [Markdown An option to highlight a Note and Warning using blockquote (Beta) #16925](https://github.com/orgs/community/discussions/16925)：2024年6月9日閲覧
 - [Markdown記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)：2024年6月9日閲覧
 
+#### 脚注
 [^1]: 酢飯の上になんか色々乗せた食べ物
 [^2]: https://github.com/orgs/community/discussions/16925
 [^3]: https://roboin.io/article/2024/01/20/note-info-not-work-in-markdown/
