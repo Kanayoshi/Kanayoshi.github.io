@@ -44,6 +44,7 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
   - 数式はコードブロックの言語指定をmathにすると表示される。
     
     ```
+
     ```math
     \begin{equation}
     sushi=
@@ -56,6 +57,7 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
     \end{pmatrix}
     \end{equation}
     ```
+
     ```
 
     出力結果は以下の通り
@@ -87,6 +89,7 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
 ```
 
 実際の表示
+
 |赤身|白身|軍艦|
 |:---|:---:|---:|
 |マグロ|ヒラメ|ウニ|
@@ -147,7 +150,6 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
 
   - この書き方はGitHubによるもの[^2]。QiitaやZennの構文は異なる[^3]
 
-- 
 ## 参考にしたサイト
 - [Markdownの書き方](https://help.docbase.io/posts/13697)：2024年6月9日閲覧
 - [Markdown An option to highlight a Note and Warning using blockquote (Beta) #16925](https://github.com/orgs/community/discussions/16925)：2024年6月9日閲覧
