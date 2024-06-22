@@ -2,7 +2,7 @@
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
-## Markdownについて
+# Markdownについて
 
 Markdown記法のメモ（自分用なのでまとまりがないです。使い方として誤っているものがあれば教えて下さい）
 
@@ -124,44 +124,6 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
 実際の表示
 今夜は寿司[^1]です。
 
-- ~~目を引く形で補足説明を行う場合、以下の書き方ができる。~~
-GitHubにてpreviewの際にはきちんと出力されるが、GitHub Pagesには対応してないっぽい。
-
-```
-> [!NOTE]
-> 補足などのメッセージ
-
-> [!TIP]
-> tipのメッセージ
-
-> [!IMPORTANT]
-> 重要なメッセージ
-
-> [!WARNING]
-> 警告のメッセージ
-
-> [!CAUTION]
-> より強い警告のメッセージ
-```
-
-実際の出力
-> [!NOTE]
-> 補足などのメッセージ
-
-> [!TIP]
-> tipのメッセージ
-
-> [!IMPORTANT]
-> 重要なメッセージ
-
-> [!WARNING]
-> 警告のメッセージ
-
-> [!CAUTION]
-> より強い警告のメッセージ
-
-  - この書き方はGitHubによるもの[^2]。QiitaやZennの構文は異なる[^3]
-
 ## 参考にしたサイト
 - [Markdownの書き方](https://help.docbase.io/posts/13697)：2024年6月9日閲覧
 - [Markdown An option to highlight a Note and Warning using blockquote (Beta) #16925](https://github.com/orgs/community/discussions/16925)：2024年6月9日閲覧
@@ -169,7 +131,7 @@ GitHubにてpreviewの際にはきちんと出力されるが、GitHub Pagesに�
 - [GitHub Pagesで数式を書く方法と主なトラブルについて](https://qiita.com/BurnEtz/items/e79999264125eb128ae7)：2024年6月9日閲覧
 - [JekyllでMathJaxからKaTeXに移行した](https://tex2e.github.io/blog/latex/mathjax-to-katex)：2024年6月9日閲覧
 
-#### 脚注
+<!-- 脚注 -->
 [^1]: 酢飯の上になんか色々乗せた食べ物
 [^2]: https://github.com/orgs/community/discussions/16925
 [^3]: https://roboin.io/article/2024/01/20/note-info-not-work-in-markdown/
