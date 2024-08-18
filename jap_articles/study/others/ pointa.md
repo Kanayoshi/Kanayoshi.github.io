@@ -1,9 +1,6 @@
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-
-# ポインタについて  
-C言語で一回は学習した事になっているポインタだが, 何もわからずただそれっぽいコードを書いて終わってしまっているのがどうにも気持ち悪い状態で今に至る. そこで, 全然わかっていないからなんとなくわかるまで理解度を上げることを目標に, ポインタの学習を行いその記録をここでつけてみる. 
+ 
 
 ## 参考文献  
 - 前橋和弥著, 「新・標準プログラマズライブラリ　C言語　ポインタ完全制覇」, 技術評論社, 2017年.
