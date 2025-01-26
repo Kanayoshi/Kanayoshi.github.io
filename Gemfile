@@ -1,10 +1,12 @@
 source "https://rubygems.org"
 
-# Jekyll本体をインストール
+gem 'base64'
+gem 'csv'
+gem 'logger'
 gem "jekyll"
 
 # Jekyllのテーマ（minima）を指定する場合
-# gem "minima", "~> 2.5"
+gem "minima", "~> 2.5"
 # 追加したいプラグインを指定
 gem "jekyll-last-modified-at"
 
