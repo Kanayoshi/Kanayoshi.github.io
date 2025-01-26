@@ -4,12 +4,6 @@ theme: minima
 markdown: kramdown  # デフォルトのマークダウンエンジン
 include:
   - "jap_articles"
-  - "*.md"
 plugins:
-  - jekyll-last-modified-at
-defaults:
-  - scope:
-      path: ""  # すべてのページに適用する場合は空
-    values:
-      last_modified_at: true
+  - jekyll-github-metadata
 
