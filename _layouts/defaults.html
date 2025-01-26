@@ -1,3 +1,14 @@
 <footer>
     <p>最終更新日: {{ site.github.build_date | date: "%Y年%m月%d日" }}</p>
 </footer>
+
+<nav>
+    <ul>
+      {% for page in site.pages %}
+        {% if page.exclude_from_header != true %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+</nav>
+  

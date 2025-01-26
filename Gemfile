@@ -9,8 +9,4 @@ gem "jekyll"
 gem "minima", "~> 2.5"
 # 追加したいプラグインを指定
 gem "jekyll-github-metadata"
-
-
-# プラグインに依存する場合も同様に記述
-# gem "jekyll-sitemap"
-# gem "jekyll-seo-tag"
+gem "github-pages", group: :jekyll_plugins

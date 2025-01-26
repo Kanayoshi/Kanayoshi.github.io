@@ -6,4 +6,6 @@ include:
   - "jap_articles"
 plugins:
   - jekyll-github-metadata
+github:
+  repository: Kanayoshi/Kanayoshi.github.io
 
