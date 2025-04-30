@@ -8,3 +8,5 @@ Bulletin of the London Mathematical Society,
 52, 4 (2020), 746-761
 ```
 
+> コメントアウトの中で数式 $\alpha$ は反映されるのか？
+> 
