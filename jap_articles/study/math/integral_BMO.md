@@ -5,7 +5,14 @@
 Bright, Martin, and Daniel Loughran. "Brauer–Manin obstruction for Erdős–Straus surfaces." Bulletin of the London Mathematical Society 52.4 (2020): 746-761.
 ```
 
-:::note 
-予想 (Erd\"{o}s--Straus)
-これででるのか？
-:::
+> [!WARNING]
+> 予想 (Erd\"{o}s--Straus)
+> これででるのか？
+
+> [!NOTE]
+> 定理 (Theorem hoge)
+> これででる
+
+> [!CAUTION]
+> 予想 (Collin)
+> これででる？
