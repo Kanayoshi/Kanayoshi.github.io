@@ -5,14 +5,22 @@
 Bright, Martin, and Daniel Loughran. "Brauer–Manin obstruction for Erdős–Straus surfaces." Bulletin of the London Mathematical Society 52.4 (2020): 746-761.
 ```
 
-> [!WARNING]
-> 予想 (Erd\"{o}s--Straus)
-> これででるのか？
+<div class="callout note">
+  <strong>Note:</strong> Useful information that users should know, even when skimming content.
+</div>
 
-> [!NOTE]
-> 定理 (Theorem hoge)
-> これででる
+<div class="callout tip">
+  <strong>Tip:</strong> Helpful advice for doing things better or more easily.
+</div>
 
-> [!CAUTION]
-> 予想 (Collin)
-> これででる？
+<div class="callout important">
+  <strong>Important:</strong> Key information users need to know to achieve their goal.
+</div>
+
+<div class="callout warning">
+  <strong>Warning:</strong> Urgent info that needs immediate user attention to avoid problems.
+</div>
+
+<div class="callout caution">
+  <strong>Caution:</strong> Advises about risks or negative outcomes of certain actions.
+</div>

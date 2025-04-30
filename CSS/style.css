@@ -44,6 +44,39 @@
     border-color: #e6e6e6;
   }
   /* ここまで */
-   
-  /* アコーディオン ここから */
+  
+  /* ブロックの作成 */
+  .callout {
+    padding: 1em;
+    margin: 1.5em 0;
+    border-left: 6px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .callout strong {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .callout.note {
+    border-color: #2b6cb0;
+    background-color: #ebf8ff;
+  }
+  
+  .callout.tip {
+    border-color: #38a169;
+    background-color: #f0fff4;
+  }
+  
+  .callout.important {
+    border-color: #d69e2e;
+    background-color: #fffbea;
+  }
+  
+  .callout.warning {
+    border-color: #e53e3e;
+    background-color: #fff5f5;
+  }  
   /* ここまで */

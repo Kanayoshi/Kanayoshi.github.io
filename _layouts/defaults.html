@@ -1,4 +1,4 @@
-<footer>
+<!-- <footer>
     <p>最終更新日: {{ site.github.build_date | date: "%Y年%m月%d日" }}</p>
 </footer>
 
@@ -10,5 +10,17 @@
         {% endif %}
       {% endfor %}
     </ul>
-</nav>
-  
+</nav> -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
