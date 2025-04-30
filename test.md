@@ -3,11 +3,13 @@ layout: default
 title: Home
 ---
 
+<link rel="stylesheet" href="{{ '/Css/style.css' | relative_url }}">
+
 # 📘 Welcome to My Page
 
 ここは Markdown ファイルにカスタムブロック（Callout）を使う例です。
 
-## 🔔 Callout Examples
+## Callout Examples
 
 <div class="callout note">
   <strong>NOTE:</strong> Useful information that users should know, even when skimming content.
