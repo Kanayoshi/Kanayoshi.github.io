@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<link rel="stylesheet" href="{{ '/Css/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/CSS/style.css' | relative_url }}">
 
 # 📘 Welcome to My Page
 
