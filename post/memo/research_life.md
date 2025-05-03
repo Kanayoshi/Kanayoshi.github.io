@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "「研究者、生活を語る」"
-date: 2025-05-03T06:35:24Z
+date: 2025-05-03 15:43:02
 # use_mathjax: true
 # categories:
 ---
