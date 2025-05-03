@@ -8,7 +8,7 @@ date: 2025-05-03
 
 # ローカル環境での $\LaTeX$ の設定覚書
 
-`/Users/(username)/.latexmkrc` を作成する.
+`/Users/(username)/.latexmkrc` を作成.
 
 2025年5月3日時点の `.latexmkrc` の内容は以下の通り.
 
