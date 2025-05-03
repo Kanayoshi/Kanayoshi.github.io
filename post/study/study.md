@@ -24,3 +24,4 @@
 。
 
 - [マークダウンの書き方について](./others/markdown_test.html)
+- [$\LaTeX$ の環境構築覚書](./others/2025-05-03-settinglatex.html)

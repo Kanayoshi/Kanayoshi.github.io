@@ -1,0 +1,36 @@
+name: Auto Update Creation Date for Modified Files
+
+on:
+  push:
+    branches:
+      - main  # または、あなたが使っているブランチ名
+
+jobs:
+  update-creation-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get current date and update creation date for modified files
+        run: |
+          # 現在の日付（ISO 8601形式）を取得
+          current_date=$(date --utc +"%Y-%m-%dT%H:%M:%SZ")
+
+          # 変更があったMarkdownファイルのみ取得
+          changed_files=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep "\.md$")
+
+          # 変更があったファイルのみに対してdateを更新
+          for file in $changed_files; do
+            if [ -f "$file" ]; then
+              sed -i 's/^date: .*/date: '"$current_date"'/' "$file"
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Auto-update creation date for modified files"
+          git push
