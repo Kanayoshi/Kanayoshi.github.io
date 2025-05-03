@@ -3,7 +3,8 @@
 .Rhistory
 
 /_site
-/jap_articles/memo/_site
-# /jap_articles/memo/diary.md
-/jap_articles/memo/draft
-/jap_articles/study/draft
+/post/memo/_site
+# /post/memo/diary.md
+/post/memo/draft
+/post/study/draft
+/post/test

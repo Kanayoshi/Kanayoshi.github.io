@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/CSS/style.css">
+</head>
+<body>
+  <header>
+    <!-- ヘッダーはここに記述 -->
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  </header>
+
+  <div id="wrapper">
+    <section>
+      <p><a href="javascript:history.back()">&larr; 前のページに戻る</a></p>
+
+      {{ content }}  <!-- Markdown 本文がここに挿入されます -->
+    </section>
+  </div>
+
+  <footer>
+    <!-- フッターはここに記述 -->
+    <!-- &copy; {{ site.time | date: "%Y" }} {{ site.title }} -->
+    <p>最終更新日: {{ site.time | date: "%Y年%m月%d日 %H:%M" }}</p>
+  </footer>
+
+  {% if page.use_mathjax == True %}
+    {% include mathjax.html %}
+  {% endif %}  
+</body>
+</html>
