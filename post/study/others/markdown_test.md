@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Markdownについて"
-date: 2025-05-03
+date: 2025-05-03T06:29:20Z
 # use_mathjax: true
 # categories:
 ---
