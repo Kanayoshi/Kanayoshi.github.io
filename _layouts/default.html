@@ -22,7 +22,7 @@
   <footer>
     <!-- フッターはここに記述 -->
     <!-- &copy; {{ site.time | date: "%Y" }} {{ site.title }} -->
-    <p>最終更新日: {{ site.time | date: "%Y年%m月%d日 %H:%M" }}</p>
+    <p>最終更新日: {{ page.date | date: "%Y年%m月%d日 %H:%M" }}</p>
   </footer>
 
   {% if page.use_mathjax == True %}
