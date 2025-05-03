@@ -22,5 +22,8 @@
     <main>
       {{ content }}
     </main>
+  {% if page.use_mathjax == True %}
+    {% include mathjax.html %}
+  {% endif %}  
   </body>
 </html>
