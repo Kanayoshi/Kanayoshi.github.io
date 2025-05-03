@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "「いたいコンサル　すごいコンサル」"
-date: 2025-05-03T06:29:20Z
+date: 2025-05-03T06:35:24Z
 # use_mathjax: true
 # categories:
 ---
