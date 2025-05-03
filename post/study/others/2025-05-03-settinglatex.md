@@ -10,7 +10,7 @@ date: 2025-05-03
 
 `/Users/(username)/.latexmkrc` を作成する.
 
-2025年5月3日時点の `.latexmkrc` の中身は以下の通り.
+2025年5月3日時点の `.latexmkrc` の内容は以下の通り.
 
 ```
 $latex = 'platex -synctex=1 -halt-on-error'; # pLaTeXを使う. -halt-on-errorで初めのエラーで終わらせる. synctexは有効にしている.
