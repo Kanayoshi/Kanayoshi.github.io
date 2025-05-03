@@ -18,7 +18,11 @@ jobs:
           current_date=$(date --utc +"%Y-%m-%dT%H:%M:%SZ")
 
           # 変更があったMarkdownファイルのみ取得
-          changed_files=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep "\.md$")
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            changed_files=$(git diff --name-only HEAD~1 | grep '\.md$')
+          else
+            CHANGED_FILES=$(git ls-files '*.md')  # 初回コミットなどの場合は全て対象
+          fi
 
           # 変更があったファイルのみに対してdateを更新
           for file in $changed_files; do
