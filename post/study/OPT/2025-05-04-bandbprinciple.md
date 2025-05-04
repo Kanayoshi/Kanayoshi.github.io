@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "BandBprinciple"
-date: 2025-05-04
+date: 2025-05-04 14:54:54
 use_mathjax: true
 # categories:
 ---
