@@ -7,7 +7,7 @@ concurrency:
 on:
   push:
     branches:
-      - "*.md"  # 適宜あなたのブランチに変更
+      - main  # 適宜ブランチ名を変更
 
 jobs:
   update-date-field:
@@ -24,20 +24,20 @@ jobs:
 
       - name: Update date in staged Markdown files only
         run: |
-          # JSTの現在時刻を取得
+          # JST時間の現在日時を取得
           export TZ=Asia/Tokyo
           current_date=$(date +"%Y-%m-%d %H:%M:%S")
 
-          # すべての Markdown ファイルを add する（差分のあるものだけ対象）
-          git ls-files -m -o --exclude-standard | grep '\.md$' | xargs git add
-          # キャッシュされた .md ファイルだけ取得
+          # ステージ済（追跡されていて変更 or 新規）の .md ファイルを取得
           added_files=$(git diff --cached --name-only --diff-filter=AM | grep '\.md$' || true)
+
+          echo "対象ファイル: $added_files"
 
           for file in $added_files; do
             if [ -f "$file" ] && grep -q '^date: ' "$file"; then
               echo "Updating date in: $file"
-              sed -i 's/^date: .*/date: '"$current_date"'/' "$file"
-              git add "$file"  # 修正後のファイルを再 add
+              sed -i "s/^date: .*/date: $current_date/" "$file"
+              git add "$file"
             fi
           done
 
