@@ -2,7 +2,7 @@
 layout: default
 title: "LLLtoDiophantine"
 date: 2025-05-05 00:12:31
-use_mathjax: true
+# use_mathjax: true
 # categories:
 ---
 
