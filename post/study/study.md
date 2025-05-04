@@ -12,7 +12,7 @@ use_mathjax: true
 
 数学関連で勉強したことをここに置く予定。
 
-- [１つ目](./math/math_articla1.html)
+- [LLLアルゴリズムとDiophantine近似](./math/2025-05-04-llltodiophantine.html)
 
 ## 自然言語処理
 
