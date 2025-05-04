@@ -28,21 +28,24 @@ jobs:
           export TZ=Asia/Tokyo
           current_date=$(date +"%Y-%m-%d %H:%M:%S")
 
-          # ローカルの変更を確認
-          changed_files=$(git status --porcelain | grep '^ M' | awk '{print $2}' | grep '\.md$' || true)
+          # ステージされた変更されたMarkdownファイルを取得
+          added_files=$(git diff --cached --name-only --diff-filter=AM | grep '\.md$' || true)
 
           echo "対象ファイル: $added_files"
 
+          # ファイルを一つ一つ処理
           for file in $added_files; do
             if [ -f "$file" ] && grep -q '^date: ' "$file"; then
               echo "Updating date in: $file"
+              # dateフィールドを更新
               sed -i "s/^date: .*/date: $current_date/" "$file"
-              git add "$file"
+              git add "$file"  # 修正したファイルを再度add
             fi
           done
 
       - name: Commit and push changes
         run: |
+          # 変更をコミットしてプッシュ
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
