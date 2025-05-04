@@ -28,8 +28,8 @@ jobs:
           export TZ=Asia/Tokyo
           current_date=$(date +"%Y-%m-%d %H:%M:%S")
 
-          # コミットされたmdファイルだけを対象にする（←ここが最大の修正点）
-          added_files=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep '\.md$' || true)
+          # ローカルの変更を確認
+          changed_files=$(git status --porcelain | grep '^ M' | awk '{print $2}' | grep '\.md$' || true)
 
           echo "対象ファイル: $added_files"
 
