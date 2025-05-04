@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Integral Brauer-Manin obstruction"
-date: 2025-05-04 14:54:54
+date: 2025-05-04 14:59:14
 use_mathjax: true
 # categories:
 ---
