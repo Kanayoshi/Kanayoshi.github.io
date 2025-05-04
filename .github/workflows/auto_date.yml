@@ -27,12 +27,8 @@ jobs:
           export TZ=Asia/Tokyo
           current_date=$(date +"%Y-%m-%d %H:%M:%S")
 
-          # 変更があったMarkdownファイルのみ取得
-          if git rev-parse HEAD~1 >/dev/null 2>&1; then
-            changed_files=$(git diff --name-only HEAD~1 | grep '\.md$')
-          else
-            changed_files=$(git ls-files '*.md')  # 初回コミットなどの場合は全て対象
-          fi
+          # 直近のコミットで変更された .md ファイルを取得
+          changed_files=$(git diff-tree --no-commit-id --name-only -r HEAD | grep '\.md$' || true)
 
           # date: 行があるもののみ更新
           for file in $changed_files; do
