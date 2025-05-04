@@ -15,6 +15,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      
+      - name: Set up git user
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
       - name: Get current date and update creation date for modified files
         run: |
@@ -29,17 +34,16 @@ jobs:
             changed_files=$(git ls-files '*.md')  # 初回コミットなどの場合は全て対象
           fi
 
-          # 変更があったファイルのみに対してdateを更新
+          # date: 行があるもののみ更新
           for file in $changed_files; do
-            if [ -f "$file" ]; then
+            if [ -f "$file" ] && grep -q '^date: ' "$file"; then
+              echo "Updating date in: $file"
               sed -i 's/^date: .*/date: '"$current_date"'/' "$file"
+              git add "$file"
             fi
           done
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "Auto-update creation date for modified files"
+          git commit -m "Auto-update date field for modified Markdown files" || echo "No changes to commit"
           git push
