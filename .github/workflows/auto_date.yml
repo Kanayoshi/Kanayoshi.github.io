@@ -28,8 +28,8 @@ jobs:
           export TZ=Asia/Tokyo
           current_date=$(date +"%Y-%m-%d %H:%M:%S")
 
-          # ステージ済（追跡されていて変更 or 新規）の .md ファイルを取得
-          added_files=$(git diff --cached --name-only --diff-filter=AM | grep '\.md$' || true)
+          # コミットされたmdファイルだけを対象にする（←ここが最大の修正点）
+          added_files=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep '\.md$' || true)
 
           echo "対象ファイル: $added_files"
 
