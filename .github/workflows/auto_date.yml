@@ -7,7 +7,7 @@ concurrency:
 on:
   push:
     branches:
-      - main  # 適宜あなたのブランチに変更
+      - "*.md"  # 適宜あなたのブランチに変更
 
 jobs:
   update-date-field:
@@ -28,7 +28,9 @@ jobs:
           export TZ=Asia/Tokyo
           current_date=$(date +"%Y-%m-%d %H:%M:%S")
 
-          # git push に含まれる直前のコミットで add されたファイルを取得
+          # すべての Markdown ファイルを add する（差分のあるものだけ対象）
+          git ls-files -m -o --exclude-standard | grep '\.md$' | xargs git add
+          # キャッシュされた .md ファイルだけ取得
           added_files=$(git diff --cached --name-only --diff-filter=AM | grep '\.md$' || true)
 
           for file in $added_files; do
@@ -41,5 +43,9 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git commit -m "Auto-update date field for added Markdown files" || echo "No changes to commit"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update date field for added Markdown files"
+            git push
+          fi
