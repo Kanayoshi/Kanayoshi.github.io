@@ -1,3 +1,11 @@
+---
+layout: default
+title: "study"
+date: 2025-05-04 14:54:54
+use_mathjax: true
+# categories:
+---
+
 # ファイル置き場
 
 ## 数学関連

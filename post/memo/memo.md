@@ -1,3 +1,11 @@
+---
+layout: default
+title: "memo"
+date: 2025-05-04 14:54:54
+use_mathjax: true
+# categories:
+---
+
 # 雑多なこと
 
 - [お酒](./alcohol.html): これまで出会ったお酒に関するメモです。

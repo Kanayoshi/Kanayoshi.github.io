@@ -1,6 +1,12 @@
-# 日本語のページ
+---
+layout: default
+title: "japanese"
+date: 2025-05-04 14:54:54
+use_mathjax: true
+# categories:
+---
 
-## 自己紹介
+# 日本語のページ
 
 気が乗ったら何か書きます。
 
