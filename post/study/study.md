@@ -2,7 +2,7 @@
 layout: default
 title: "study"
 date: 2025-05-05 00:08:01
-use_mathjax: true
+# use_mathjax: true
 # categories:
 ---
 
@@ -33,3 +33,4 @@ use_mathjax: true
 
 - [マークダウンの書き方について](./others/markdown_test.html)
 - [$\LaTeX$ の環境構築覚書](./others/2025-05-03-settinglatex.html)
+- [数式の入ったマークダウン記法の注意点](./others/2025-05-05-markdownincludemath.html)
