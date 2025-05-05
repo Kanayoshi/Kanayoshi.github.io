@@ -2,7 +2,7 @@
 layout: default
 title: "Markdownについて"
 date: 2025-05-04 15:19:19
-# use_mathjax: true
+use_mathjax: true
 # categories:
 ---
 
@@ -57,8 +57,8 @@ Markdown記法のメモ（自分用なのでまとまりがないです。使い
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   ```
 
-  - ~~数式はコードブロックの言語指定をmathにすると表示される。~~
-  どうもGitHub Pagesを介してサイトに表示させる場合にはうまく使えなさそう。別行立ての数式として利用するしかないかも
+  - 数式はコードブロックの言語指定をmathにすると表示される。
+  ~~どうもGitHub Pagesを介してサイトに表示させる場合にはうまく使えなさそう。別行立ての数式として利用するしかないかも~~
     
     ````
     ```math
