@@ -14,11 +14,12 @@ use_mathjax: true
 
 - [LLLアルゴリズムとDiophantine近似](./math/2025-05-04-llltodiophantine.html)
 
-## 自然言語処理
+## The Rust Programming Language のメモ
 
-自然言語処理関連で勉強したことをここに置く予定。
+[The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/title-page.html) を勉強したメモです. 
 
-- [１つ目](./NLP/NLP_articla1.html)
+- [Rustメモ(1)](./others/2025-05-18-rust1.html)
+- [Rustメモ(2)](./others/2025-05-19-rust2.html)
 
 ## 最適化
 

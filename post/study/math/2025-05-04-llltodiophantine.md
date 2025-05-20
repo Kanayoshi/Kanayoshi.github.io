@@ -10,7 +10,7 @@ use_mathjax: true
 
 このノートでは以下の定理を示すことが目標である.
 
-> 定理
+> **定理**
 > 
 > $a_1, \dots, a_n\in\mathbb{Q}$ と 実数 $0<\varepsilon<1$ が与えられたとき,
 > 
@@ -18,7 +18,7 @@ use_mathjax: true
 > \begin{aligned}
 >   \begin{cases}
 >     &1 \leq q \leq 2^{n(n+1)/4}\varepsilon^{-n},\\
->     &\lvert qa_i - p_i \rvert \varepsilon\quad\text{for all $i\in \{1,\dots, n\}$}
+>     &\lvert qa_i - p_i \rvert < \varepsilon\quad\text{for all $i\in \{1,\dots, n\}$}
 >   \end{cases}
 > \end{aligned}
 > $$
@@ -37,14 +37,14 @@ use_mathjax: true
 
 まず, 1変数の場合の Dirichlet の定理から復習する.
 
-> 定理
+> **定理**
 > 
 > $a\in\mathbb{Q}$ と 実数 $0 < \varepsilon < 1$ に対して, $1\leq q \leq \varepsilon^{-1}$ かつ $\lvert qa - p \rvert\leq\varepsilon$ を満たす整数 $p, q$ が存在する.
 
 定理において, 整数 $p, q$ を特定するアルゴリズムは有理数 $a$ の連分数展開を考えることで与えられる. このアルゴリズムは多項式時間で計算可能なものになっている.
 多変数の場合にも同様に Dirichlet の定理が存在する.[^1]
 
-> 定理
+> **定理**
 > 
 > $a_1, \dots, a_n\in\mathbb{Q}$ と 実数 $0<\varepsilon<1$ が与えられたとき,
 > 
