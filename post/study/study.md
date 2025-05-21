@@ -18,8 +18,9 @@ use_mathjax: true
 
 [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/title-page.html) を勉強したメモです. 
 
-- [Rustメモ(1)](./others/2025-05-18-rust1.html)
-- [Rustメモ(2)](./others/2025-05-19-rust2.html)
+- [Rustメモ(1):3.1-3.2](./others/2025-05-18-rust1.html)
+- [Rustメモ(2):3.3-3.5](./others/2025-05-19-rust2.html)
+- [Rustメモ(3):4.1](./others/2025-05-21-rust3.html)
 
 ## 最適化
 
