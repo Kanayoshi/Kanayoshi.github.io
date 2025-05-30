@@ -22,6 +22,9 @@ use_mathjax: true
 - [Rustメモ(2):3.3-3.5](./others/2025-05-19-rust2.html)
 - [Rustメモ(3):4.1](./others/2025-05-21-rust3.html)
 - [Rustメモ(4):4.2-4.3](./others/2025-05-25-rust4.html)
+- [Rustメモ(5):5.1-5.3](./others/2025-05-26-rust5.html)
+- [Rustメモ(6):6.1-6.3](./others/2025-05-28-rust6.html)
+- [Rustメモ(7):7.1-7.2](./others/2025-05-30-rust7.html)
 
 ## 最適化
 
