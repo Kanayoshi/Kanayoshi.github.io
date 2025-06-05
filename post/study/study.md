@@ -14,9 +14,9 @@ use_mathjax: true
 
 - [LLLアルゴリズムとDiophantine近似](./math/2025-05-04-llltodiophantine.html)
 
-## The Rust Programming Language のメモ
+## Rust関連
 
-[The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/title-page.html) を勉強したメモです. 
+### [The Rust Programming Language 日本語版](https://doc.rust-jp.rs/book-ja/title-page.html) のメモ
 
 - [Rustメモ(1):3.1-3.2](./others/2025-05-18-rust1.html)
 - [Rustメモ(2):3.3-3.5](./others/2025-05-19-rust2.html)
@@ -25,6 +25,9 @@ use_mathjax: true
 - [Rustメモ(5):5.1-5.3](./others/2025-05-26-rust5.html)
 - [Rustメモ(6):6.1-6.3](./others/2025-05-28-rust6.html)
 - [Rustメモ(7):7.1-7.2](./others/2025-05-30-rust7.html)
+- [Rustメモ(8):7.3-7.4](./others/2025-06-02-rust8.html)
+- [Rustメモ(9):8.1](./others/2025-06-04-rust9.html)
+- [Rustメモ(10):8.2-8.3](./others/2025-06-05-rust10.html)
 
 ## 最適化
 
