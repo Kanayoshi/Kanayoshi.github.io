@@ -54,9 +54,7 @@ response = client.models.generate_content(
 print(response.text)
 ```
 
-<details>
-
-<summary> 結果 </summary>
+結果は以下の通り。
 
 You're looking for Python programs to visualize sorting algorithms without using
 `Tkinter`. This is a fantastic challenge, and `matplotlib` is an excellent choice for this kind of animation!
@@ -449,4 +447,11 @@ if __name__ == "__main__":
     ```
 
 You will see a `matplotlib` window pop up, showing the bar chart sorting the 10 random numbers step-by-step!
-</details>
+
+以下、このデモに関するメモ書き。
+- ドキュメント含め生成されているのはすごい。
+- 今回は最低限の入力にとどめたが、APIキーを介しているので、以下の機能を追加したい。
+    - `.py`ファイルそのものを出力させ、生成された直後に実行できるようにする。
+    - 今回ソート対象はランダムに生成した10個の整数にfixしているが、ここの入力を都度できるようにする。
+    - オブジェクト指向を意識したコードに書き直す（保守・拡張性を高めるため、適切にファイルを分割する）。
+- 今回はpythonで作成したが、Rustでも同様のことを試してみたい。

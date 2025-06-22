@@ -38,7 +38,7 @@ use_mathjax: true
 
 ## 生成AI関連
 - [生成AIを使ったプログラミング(1)](./others/2025-06-22-generateai1.html)
-- [生成AIを使ったプログラミング(2)]()
+- [生成AIを使ったプログラミング(2)](./others/2025-06-22-generateai2.html)
 
 ## その他
 
