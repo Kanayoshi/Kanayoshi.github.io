@@ -101,15 +101,15 @@ Minimize the total working hours of all drivers.
 **Parameters:**
 
 *   $duration_s$: Duration of shift $s$ in hours.
-*   $start\_time_s$: Start time of shift $s$ (e.g., in minutes from midnight).
-*   $end\_time_s$: End time of shift $s$ (e.g., in minutes from midnight).
+*   $\text{start\_time}_s$: Start time of shift $s$ (e.g., in minutes from midnight).
+*   $\text{end\_time}_s$: End time of shift $s$ (e.g., in minutes from midnight).
 *   $depot\_s$: Depot associated with shift $s$.
-*   $day\_type\_s$: Type of day (e.g., 'Weekday', 'Weekend') for which shift $s$ is available.
-*   $driver\_depot_d$: Depot associated with driver $d$.
-*   $day\_type\_t$: Type of day $t$.
-*   $MAX\_DAILY\_HOURS = 8$
-*   $MAX\_WEEKLY\_HOURS = 40$
-*   $MIN\_REST\_HOURS = 10$
+*   $\text{day\_type}_s$: Type of day (e.g., 'Weekday', 'Weekend') for which shift $s$ is available.
+*   $\text{driver\_depot}_d$: Depot associated with driver $d$.
+*   $\text{day\_type}_t$: Type of day $t$.
+*   $\text{MAX\_DAILY\_HOURS} = 8$
+*   $\text{MAX\_WEEKLY\_HOURS} = 40$
+*   $\text{MIN\_REST\_HOURS} = 10$
 
 **Decision Variable:**
 
@@ -118,33 +118,44 @@ Minimize the total working hours of all drivers.
 **Objective Function:**
 
 Minimize Total Working Hours:
-$$ \min \sum_{d \in D} \sum_{s \in S} \sum_{t \in T} duration_s \cdot x_{d,s,t} $$
+
+$$
+\min \displaystyle\sum_{d \in D} \sum_{s \in S} \sum_{t \in T} duration_s \cdot x_{d,s,t}
+$$
 
 **Constraints:**
 
 1.  **Each Shift Covered Exactly Once:**
     For each shift $s \in S$ and each day $t \in T$:
-    If $day\_type\_s = day\_type\_t$:
-    $$ \sum_{d \in D \text{ s.t. } driver\_depot_d = depot_s} x_{d,s,t} = 1 $$
+    If $\text{day\_type}_s = \text{day\_type}_t$:
+    $$ 
+    \displaystyle\sum_{d \in D \text{ s.t. } driver\_depot_d = depot_s} x_{d,s,t} = 1
+    $$
 
 2.  **Daily Working Hours Limit:**
     For each driver $d \in D$ and each day $t \in T$:
-    $$ \sum_{s \in S \text{ s.t. } depot_s = driver\_depot_d \text{ and } day\_type\_s = day\_type\_t} duration_s \cdot x_{d,s,t} \le MAX\_DAILY\_HOURS $$
+    $$
+    \displaystyle\sum_{s \in S \text{ s.t. } depot_s = \text{driver\_depot}_d \text{ and } \text{day\_type}_s = \text{day\_type}_t} duration_s \cdot x_{d,s,t} \le \text{MAX\_DAILY\_HOURS}
+    $$
 
 3.  **Weekly Working Hours Limit:**
     For each driver $d \in D$:
-    $$ \sum_{s \in S \text{ s.t. } depot_s = driver\_depot_d} \sum_{t \in T \text{ s.t. } day\_type\_s = day\_type\_t} duration_s \cdot x_{d,s,t} \le MAX\_WEEKLY\_HOURS $$
+    $$ 
+    \displaystyle\sum_{s \in S \text{ s.t. } depot_s = \text{driver\_depot}_d} \sum_{t \in T \text{ s.t. } \text{day\_type}_s = \text{day\_type}_t} duration_s \cdot x_{d,s,t} \le \text{MAX\_WEEKLY\_HOURS}
+    $$
 
 4.  **Rest Period between Shifts (10 hours):**
     For each driver $d \in D$:
     For each day $t \in T$ (except the last day):
     For each shift $s_1 \in S$ (assigned on day $t$):
     For each shift $s_2 \in S$ (assigned on day $t+1$):
-    If ($driver\_depot_d = depot_{s_1} = depot_{s_2}$) and ($day\_type_{s_1} = day\_type_t$) and ($day\_type_{s_2} = day\_type_{t+1}$):
-    Let $t_{end1}$ be $end\_time_{s_1}$ and $t_{start2}$ be $start\_time_{s_2}$.
-    Calculate rest period: $rest\_period = (24 \cdot 60 - t_{end1}) + t_{start2}$ (in minutes).
-    If $rest\_period < MIN\_REST\_HOURS \cdot 60$:
-    $$ x_{d,s_1,t} + x_{d,s_2,t+1} \le 1 $$
+    If ($\text{driver\_depot}_{d} = depot_{s_1} = depot_{s_2}$) and ($\text{day\_type}_{s_1} = \text{day\_type}_{t}$) and ($\text{day\_type}_{s_2} = \text{day\_type}_{t+1}$):
+    Let $t_{end1}$ be $\text{end\_time}_{s_1}$ and $\t_{start2}$ be $\text{start\_time}_{s_2}$.
+    Calculate rest period: $\text{rest\_period} = (24 \cdot 60 - t_{end1}) + t_{start2}$ (in minutes).
+    If $\text{rest\_period} < \text{MIN\_REST\_HOURS} \cdot 60$:
+    $$ 
+    x_{d,s_1,t} + x_{d,s_2,t+1} \le 1 
+    $$
 
 ---
 
