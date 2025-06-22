@@ -28,6 +28,7 @@ use_mathjax: true
 - [Rustメモ(8):7.3-7.4](./others/2025-06-02-rust8.html)
 - [Rustメモ(9):8.1](./others/2025-06-04-rust9.html)
 - [Rustメモ(10):8.2-8.3](./others/2025-06-05-rust10.html)
+- [Rustメモ(11):9.1-9.2](./others/2025-06-09-rust11.html)
 
 ## 最適化
 
