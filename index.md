@@ -57,18 +57,11 @@ Email-2: ahbn112358\[at\]gmail.com (Please replace \[at\] with @.)
 
 ### Paper
 
-- **How to calculate the proportion of everywhere locally soluble
-  diagonal hypersurfaces**, joint work with Yoshinosuke Hirakawa,
-  International Journal of Number Theory, Vol.17, No.10, pp.2361 - 2377,
-  2021 ([arXiv:2003.11426](https://arxiv.org/abs/2003.11426)).
-- **Some periodic integer continued fraction expansions of √m and
-  application to the Pell equations**, joint work with Hyuga Yoshizaki,
-  preprint
-  ([arXiv:2208.08347](https://doi.org/10.48550/arXiv.2208.08347)).
-- **On the proportions of soluble forms in some families of locally
-  soluble binary quartic forms**, joint work with Yasuhiro Ishitsuka,
-  accepted in Tokyo Journal of Mathematics
-  ([arXiv:2306.15233](https://doi.org/10.48550/arXiv.2306.15233)).
+- **How to calculate the proportion of everywhere locally soluble diagonal hypersurfaces**, joint work with Yoshinosuke Hirakawa, [International Journal of Number Theory, Vol.17, No.10, pp.2361 - 2377, 2021](https://doi.org/10.1142/S1793042121500925) ([arXiv:2003.11426](https://arxiv.org/abs/2003.11426)).
+- **Some periodic integer continued fraction expansions of $\sqrt{m}$ and application to the Pell equations**, joint work with Hyuga Yoshizaki, preprint ([arXiv:2208.08347](https://doi.org/10.48550/arXiv.2208.08347)).
+- **On the proportions of soluble forms in some families of locally soluble binary quartic forms**, joint work with Yasuhiro Ishitsuka, [Tokyo Journal of Mathematics, Vol.47, No.2, pp.505 - 521, 2024](https://doi.org/10.3836/tjm/1502179411) ([arXiv:2306.15233](https://doi.org/10.48550/arXiv.2306.15233)).
+- **On some periodic continued fractions along the $\mathbb{Z}_2$ extension over $\mathbb{Q}$**, joint work with Hyuga Yoshizaki, preprint ([arXiv:2503.09909](
+https://doi.org/10.48550/arXiv.2503.09909)).
 
 ### Survay
 
