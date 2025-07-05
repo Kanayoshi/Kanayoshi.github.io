@@ -13,6 +13,7 @@ use_mathjax: true
 数学関連で勉強したことをここに置く予定。
 
 - [LLLアルゴリズムとDiophantine近似](./math/2025-05-04-llltodiophantine.html)
+- [情報幾何メモ(1)](./math/2025-07-05-infogeom1.html)
 
 ## Rust関連
 
